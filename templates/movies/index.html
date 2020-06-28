@@ -1,0 +1,10 @@
+{% extends 'movies/base.html' %}
+{% block body %}
+<h4>
+    {{ header }}
+    {% if count %}
+    <small>(Total records: {{ count }})</small>
+    {% endif %}
+</h4>
+{% include 'movies/movie_table.html' %}
+{% endblock %}
