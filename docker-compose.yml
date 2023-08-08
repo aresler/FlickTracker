@@ -6,7 +6,6 @@ services:
       - .:/app
     ports:
       - "127.0.0.1:8080:8080"
-    environment:
-      - DJANGO_SETTINGS_MODULE=moviedb.settings.prod
-      - CSRF_TRUSTED_ORIGINS=https://public_hostname:port
+    env_file:
+      - .env
     command: "/app/entrypoint.sh"

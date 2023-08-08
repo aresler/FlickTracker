@@ -6,3 +6,4 @@ movies.sock
 export
 /static
 log
+.env

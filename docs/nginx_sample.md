@@ -12,7 +12,7 @@ server {
 
     location /static/ {
         # root /var/www;
-        alias /var/www/static/;
+        alias /var/www/moviedb/static/;
     }
 }
 ```
