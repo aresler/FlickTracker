@@ -1,9 +1,11 @@
 .idea
 **/__pycache__
 venv*
-db.sqlite3
-movies.sock
+.env
 export
 /static
-log
-.env
+/log
+
+db.sqlite3
+movies.sock
+gunicorn.log
